@@ -9,9 +9,9 @@ app.use("/users",userRouter)
 const productRoutes = require('./src/routes/ProductRoutes')
 app.use("/products",productRoutes)
 
-const db = mongoose.connect("mongodb://127.0.0.1:27017/AndroidApi")
+const db = mongoose.connect("mongodb+srv://maahirmshah4252:PH8t0roYyXHsMoHa@cluster0.unu4s.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 db.then((data) => {
-    console.log("DB COnnected")
+    console.log("DB Connected")
 }).catch((err) =>{
     console.log(err)
 })
